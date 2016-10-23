@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.io.File;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -49,4 +51,12 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    //Create a file
+    public void createFile(){
+        String filename;
+        
+        File file = new File(context.getFilesDir, filename);
+    }
 }
+
